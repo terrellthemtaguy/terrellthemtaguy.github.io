@@ -1,6 +1,8 @@
 ---
 layout: default
+published: true
 ---
+
 <!-- HEADER -->
 <div id="header_wrap" class="outer">
     <header class="inner">
@@ -18,6 +20,7 @@ layout: default
       -- Terrell Merritt
   </section>
   <section class="inner">
+   <h3>Events:</h3> 
   {% for direction in site.posts %}
     <h4><a href="{{ direction.url }}">{{ direction.title }} - <span style="font-size: 14px;">{{ direction.time }}</span></a></h4>
   {% endfor %}
