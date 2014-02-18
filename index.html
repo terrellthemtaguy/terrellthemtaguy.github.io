@@ -1,48 +1,33 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+      <h1 id="project_title">Terrell&#39;s Transit Directions</h1>
+      <h2 id="project_tagline">Transit directions for travel via public transportation in New York City.</h2>
+    </header>
+</div>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Terrell&#39;s Transit Directions : Transit directions for travel via public transportation in New York City." />
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner">
+    <h3>
+      <a name="welcome-to-terrells-transit-directions" class="anchor" href="#welcome-to-terrells-transit-directions"><span class="octicon octicon-link"></span></a>Welcome to Terrell's Transit Directions!</h3>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+      <p>I will be using this site to display my transportation 'documents' for use in travelling through New York City. Hopefully this will be easier for me to edit than Google Docs, so let's see!<br>
+      -- Terrell Merritt</p>
+  </section>
+  <section class="inner">
+  {% for direction in posts %}
+    <h4><a href="{{ direction.url }}">{{ direction.title }}</a></h4>
+  {% endfor %}
+  </section>
+</div>
 
-    <title>Terrell&#39;s Transit Directions</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/terrellthemtaguy">View on GitHub</a>
-
-          <h1 id="project_title">Terrell&#39;s Transit Directions</h1>
-          <h2 id="project_tagline">Transit directions for travel via public transportation in New York City.</h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-terrells-transit-directions" class="anchor" href="#welcome-to-terrells-transit-directions"><span class="octicon octicon-link"></span></a>Welcome to Terrell's Transit Directions!</h3>
-
-<p>I will be using this site to display my transportation 'documents' for use in travelling through New York City. Hopefully this will be easier for me to edit than Google Docs, so let's see!<br>
--- Terrell Merritt</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
-</html>
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+  <footer class="inner">
+    <p>&copy; 2014 Terrell Merritt - Bronx High School of Science</p>
+  </footer>
+</div>
