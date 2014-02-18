@@ -19,7 +19,7 @@ layout: default
       -- Terrell Merritt</p>
   </section>
   <section class="inner">
-  {% for direction in posts %}
+  {% for direction in site.posts %}
     <h4><a href="{{ direction.url }}">{{ direction.title }}</a></h4>
   {% endfor %}
   </section>
