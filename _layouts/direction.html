@@ -15,7 +15,21 @@ layout: default
     <p>
         <strong>Location:</strong> {{ page.location }}
         <br>
-        <strong>Nearest Station:</strong> {{ page.nearest-station }}
+        <table>
+            <tbody><tr>
+            {% if page.nearest-stations %}
+                <td>Nearest Stations:&nbsp;</td>
+                <td>
+                {% for station in page.nearest-stations %}
+                    {{ station }}<br>
+                {% endfor %}
+                </td>
+            {% else %}
+                <td>Nearest Station:&nbsp;</td>
+                <td>{{ nearest-station }}</td>
+            {% endif %}
+            </tr></tbody>
+        </table>
         <br>
         <strong>Service Changes:</strong> {{ page.changes-brief }}
         <br>
