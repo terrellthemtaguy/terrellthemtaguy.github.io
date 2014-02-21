@@ -13,13 +13,12 @@ layout: default
 <div id="main_content_wrap" class="outer">
     <section id="main_content" class="inner">
     <p>
-        <strong>Location:</strong> {{ page.location }}
-        <br>
         <table style="border: none;">
             <tbody><tr>
+            <td><strong>Location:</strong></td> <td>{{ page.location }}</td></tr>
             {% if page.nearest-stations %}
             <style>td {border: none;}</style>
-                <td>Nearest Stations:&nbsp;</td>
+                <td><strong>Nearest Stations:&nbsp;</strong></td>
                 <td>
                 {% for station in page.nearest-stations %}
                     {{ station }}<br>
@@ -29,13 +28,10 @@ layout: default
                 <td>Nearest Station:&nbsp;</td>
                 <td>{{ nearest-station }}</td>
             {% endif %}
-            </tr></tbody>
-        </table>
-        <br>
-        <strong>Service Changes:</strong> {{ page.changes-brief }}
-        <br>
-        For more details on service changes, click the following link: {{ page.changes-ext }}
-        <br>
+            </tr>
+        <td><strong>Service Changes:</strong></td> <td>{{ page.changes-brief }}</td></tr>
+        </table> 
+        For more details on service changes, click the following link: {{ page.changes-ext }}</tr></tbody>
     </p>
     {{ content }}
     </section>
