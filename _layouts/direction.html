@@ -6,9 +6,6 @@ layout: default
     <header class="inner">
         <h1 id="project_title">{{ page.title }}</h1>
         <h2 id="project_tagline">{{ page.time }}</h2>
-        {% if page.entity %}
-            <h2 id="for_who">For {{ page.entity }}</h2>
-        {% endif %}
     </header>
 </div>
 
@@ -19,6 +16,9 @@ layout: default
     <style>td {border: none;} table {border: none;} img {padding: 0; margin: 0; border: none;}</style>
         <table>
             <tbody><tr>
+            {% if page.entity %}
+                <td><strong>For:</strong></td> <td>{{ page.entity }}</td>
+            {% endif %}
             <td><strong>Location:</strong></td> <td>{{ page.location }}</td></tr>
             {% if page.nearest-stations %}
                 <td><strong>Nearest Stations:&nbsp;</strong></td>
