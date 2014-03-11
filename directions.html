@@ -16,8 +16,8 @@ published: true
   <section id="main_content" class="inner">
   
       {% for direction in site.posts %}
-        <p><span style="font-size: 22px;"><a href="{{ direction.url }}"><strong>{{ direction.title }}</strong></a>
-        {% if direction.entity %}[{{ direction.entity }}]{% endif %}<br></span>
+        <p><span style="font-size: 24px;"><a href="{{ direction.url }}"><strong>{{ direction.title }}</strong></a><br>
+        {% if direction.entity %}For [{{ direction.entity }}]{% endif %}<br></span>
         <span style="font-size: 16px;">{{ direction.time }}</span></h4></p>
         <hr align="LEFT">
       {% endfor %}
