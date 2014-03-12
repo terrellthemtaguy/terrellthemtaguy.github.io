@@ -1,0 +1,32 @@
+---
+layout: default
+title: All Directions
+published: true
+---
+
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+      <h1 id="project_title">All Directions</h1>
+    </header>
+</div>
+
+<div id="main_content_wrap" class="outer">
+  <section id="main_content" class="inner">
+  
+      {% for direction in site.posts %}
+        <p><span style="font-size: 24px;"><a href="{{ direction.url }}"><strong>{{ direction.title }}</strong></a></span>
+        {% if direction.entity %}<br>For {{ direction.entity }}{% endif %}<br>
+        <span style="font-size: 16px;">{{ direction.time }}</span></h4></p>
+        <hr align="LEFT">
+      {% endfor %}
+
+  </section>
+</div>
+
+<!-- FOOTER -->
+<div id="footer_wrap" class="outer">
+  <footer class="inner">
+    <p>&copy; 2014 Terrell Merritt of The Bronx High School of Science. While unlikely, last minute service changes may supercede the information provided on this site. Visit the official Metropolitan Transportation Authority website at <a href="http://www.mta.info">mta.info</a> for the latest transit information.</p>
+  </footer>
+</div>
