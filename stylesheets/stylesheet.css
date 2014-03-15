@@ -438,7 +438,7 @@ Small Device Styles
 }
 
 /* Temporary navbar styles */
-.nav{
+#nav{
     border: 1px solid #ccc;
     border-width: 1px 0;
     list-style: none;
@@ -447,16 +447,16 @@ Small Device Styles
     text-align: center;
 }
 
-.nav li{
+#nav li{
     display: inline;
 }
 
-.nav li.active{
+#nav li.active{
     font-color: #fff;
     font-weight: bold;
 }
 
-.nav a{
+#nav a{
     display: inline-block;
     padding: 10px;
 }
