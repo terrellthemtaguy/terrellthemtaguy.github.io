@@ -451,8 +451,13 @@ Small Device Styles
     display: inline;
 }
 
+#nav li a:link{
+    text-decoration: none;
+    color: #fff
+}
+
 #nav li.active{
-    font-color: #fff;
+    color: #fff;
     font-weight: bold;
 }
 
