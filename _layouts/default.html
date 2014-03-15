@@ -17,10 +17,10 @@
       </center>
       <!-- Temporary Navbar -->
       <ul class="nav">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/directions">Directions</a></li>
-        <li><a href="/weekend_information">Weekend Info</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li{% if page.url == '/index.html' %} class="active" {% endif %}><a href="/index.html">Home</a></li>
+        <li{% if page.url == '/directions/index.html' %} class="active" {% endif %}><a href="/directions">Directions</a></li>
+        <li{% if page.url == '/weekend_information/index.html' %} class="active" {% endif %}><a href="/weekend_information">Weekend Info</a></li>
+        <li{% if page.url == '/contact/index.html' %} class="active" {% endif %}> <a href="/contact">Contact</a></li>
       </ul>
     </header>
 </div>
